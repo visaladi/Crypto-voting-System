@@ -15,7 +15,7 @@ public class VotingSystem {
         this.eaPrivateKey = eaPrivateKey;
     }
 
-    // Adds a vote to the system
+    // Adds a vote to system
     public void addVote(Vote vote) {
         votes.add(vote);
     }
