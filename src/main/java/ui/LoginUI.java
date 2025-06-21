@@ -33,7 +33,7 @@ public class LoginUI {
         switch (choice) {
             case "Admin Login":
                 String password = JOptionPane.showInputDialog("Enter Admin Password:");
-                if ("admin123".equals(password)) {
+                if ("admin123".equals(password)) { //password admin123
                     JOptionPane.showMessageDialog(null, "Admin logged in successfully!");
                     AdminUI.show(system);
                 } else {
