@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "voterID": "visala",
+      "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsA+pH15ZVaFkclejtWkT6l0/bhA9qzJ/DA70LAg3Ozl0n4W5AkZq4iO9a3Jax5tYCakPN3jLwekL5SuaTt9JyoqIdusDwmTCBIDJ/zXzyjRIKeNCe66L7VLKXz4IcjAulM/KIxtw+14V0MWQkf2hU/l5QFXloAYqYuNtaJ7Oz6sbBb0PAA4OochviB2KrCD0sgGd1TSZurm99yt7A0gRCyCmNNTIrLV4z8PYIXQSc2WHYdDJ2adpptVZlpYV1Mqn0UgDMHK0Tz18Gm4kj5ZnRFtF3WX2vjQXMnzxEVeSpZ7nQ3/uBodsHsb+zZ7kehvyhzYivhu1WrAkGgwYjBrH0QIDAQAB",
+      "email": "visal@gmail.com"
+    }
+  ],
+  "candidates": [
+    "visal",
+    "kamal",
+    "nimal"
+  ],
+  "votes": [
+    {
+      "encryptedVote": "NJ83GLdWnPa556xbxGFeQlf5yGJ8VZrI+IEDu/SeTXKNVF8sOj3ao+mzjRtp+6doJS9wIki0tU4xR8rJW4D5h1ZZnueyEjftOk2WJfzQAt28tMlNKwtD5RXtkPRuqxQWyJGb/dPjC0TUbsEIbW7+AZTc8nE8SXrQzximS4HWqm8+hBth4fXg8naQoTs27DwknAjlxKPVH3fe7nqLriRojJhjUV+XEjjHuAef7KWpcMPoAM1Wi+4Fa/SATp05ZXmxOdB+nxZfY3Qs3IrRd7l+0sFe/T4BFCecieB2rkYukjxX5ROfuoL6X4/tkZ6vrOwjoZU7jEGJyTLAAGZ9yHxCNA\u003d\u003d",
+      "voterID": "visala"
+    },
+    {
+      "encryptedVote": "Zy9sN0CLSE8SZPGJte3MUiGs/jdCRD5/CodSwgDUQ7nJWqNBrWjTk6+Lb2HfOChKH+C4b0Hs/UgvVA9RWRXoKytQw+l08+JbcvqnCAc+bfl9mn94HkxMAzt2z0sGI8kLD4uCdgi1rxCDksmuvbSMuBN1vXPRdz7UOVkWiFNw4NX21ZeJVKGrZjuNzg1pNRNSvFEuMreGuOAj7kgKrBj3c50WY/YMksygvuRYGzJr4PLQaAm16RN/UOa0hm7LSU/XJ5WX9DbTNIts9PQ485KfdsRNdPQaW0ytvDNY5w5ejzdv9sgLthBJYmUF0h4J/qtHcarF2c740Rle+ixXK9M//Q\u003d\u003d",
+      "voterID": "visala"
+    },
+    {
+      "encryptedVote": "J17BJH7Zodxi6st3atPsXyvirMapgLPBFxJwjuXrjreTk66lyFiK6XureejWWVJWD9cWdPsiEOEJ9imr1WlkL0cw6kVPuWhVkYd0TxsmPne9179kIPn0mYPIc7BwMdMvy7oxmSsB76V5KU2iavUL4qmp3vEQTtk7gz5v7cS13VCfXT+099jfinS/Ty/Q2LtxqD3lLMdFikBP9Kyle+imrobL9A+8ZHy7eXMNSHkt6SQc9xwpBN7saIQtmsKAK0oniORyHhNQcm/Eduf7zA08odLX2gSLXDLqP3Ixr9D+2FJlGmToTutrCv/s9R1lOK4MLbZY8ICbk0xf3pmF57vvJw\u003d\u003d",
+      "voterID": "visala"
+    }
+  ]
+}
