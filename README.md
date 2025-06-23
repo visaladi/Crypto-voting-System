@@ -70,7 +70,7 @@ The project uses the **Sign-Then-Encrypt** strategy:
 
 1. **Clone the repository**
 
-   ```bash
+  bash
    git clone https://github.com/your-username/secure-voting-system-java.git
    cd secure-voting-system-java
 Ensure Java 17+ is installed
@@ -93,15 +93,15 @@ Run the application
 
 Run Main.java
 
-📝 Notes
+## 📝 Notes
 Admin credentials are hardcoded: admin / admin123
 
-All votes, voters, and candidates are persisted in:
+##  All votes, voters, and candidates are persisted in:
 
 mathematica
-Copy
-Edit
+
 C:\Users\visal Adikari\OneDrive\Desktop\uni sem4\web application\springboort\08-24-01\First\isproject\src\main\resources\data.json
+ ```
 📌 Future Improvements
 ✅ Add password hashing for registered users
 
