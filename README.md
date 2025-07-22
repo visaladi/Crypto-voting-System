@@ -101,8 +101,8 @@ Admin credentials are hardcoded: admin / admin123
 mathematica
 
 C:\Users\visal Adikari\OneDrive\Desktop\uni sem4\web application\springboort\08-24-01\First\isproject\src\main\resources\data.json
- ```
-📌 Future Improvements
+
+## 📌 Future Improvements
 ✅ Add password hashing for registered users
 
 ✅ RSA key generation per voter
@@ -111,7 +111,7 @@ C:\Users\visal Adikari\OneDrive\Desktop\uni sem4\web application\springboort\08-
 
 ✅ Switch to JavaFX for modern UI
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 Visal Sandeep Adikari
 University of Ruhuna, Sri Lanka
 LinkedIn | GitHub
