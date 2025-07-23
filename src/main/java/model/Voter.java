@@ -6,6 +6,7 @@ public class Voter {
     private String voterID;
     private String publicKey;
     private String email;
+    private String password;
 
     public Voter(String voterID, String publicKey) {
         this.voterID = voterID;
@@ -20,7 +21,13 @@ public class Voter {
     public String getEmail() {
         return email;
     }
+    public String getPassword() {
+        return password;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
     // Voter ID
     public String getVoterID() {
         return voterID;

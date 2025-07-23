@@ -3,6 +3,7 @@ package ui;
 import logic.UserManager;
 import model.Voter;
 import logic.VotingSystem;
+import crypto.SecurityUtil;
 
 import javax.swing.*;
 import java.security.KeyPair;
@@ -33,7 +34,7 @@ public class LoginUI {
         switch (choice) {
             case "Admin Login":
                 String password = JOptionPane.showInputDialog("Enter Admin Password:");
-                if ("admin123".equals(password)) { //password admin123
+                if ("admin123".equals(password)) {
                     JOptionPane.showMessageDialog(null, "Admin logged in successfully!");
                     AdminUI.show(system);
                 } else {
@@ -43,17 +44,23 @@ public class LoginUI {
 
             case "User Login":
                 String email = JOptionPane.showInputDialog("Enter your registered email:");
+                String inputPassword = JOptionPane.showInputDialog("Enter your password:");
+
                 Voter voter = UserManager.getUser(email);
                 if (voter == null) {
                     JOptionPane.showMessageDialog(null, "User not found. Please register.");
                     break;
                 }
 
+                // ✅ Check hashed password
+                if (!voter.getPassword().equals(SecurityUtil.hashPassword(inputPassword))) {
+                    JOptionPane.showMessageDialog(null, "Incorrect password.");
+                    break;
+                }
+
                 try {
                     KeyPair keyPair = KeyGeneratorUtil.generateKeyPair();
                     PrivateKey privateKey = keyPair.getPrivate();
-
-                    // voter public key not needed here anymore
                     VotingUI.show(voter, system, eaPublicKey, privateKey);
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, "Error during login: " + e.getMessage());
@@ -63,8 +70,8 @@ public class LoginUI {
             case "Register":
                 String regEmail = JOptionPane.showInputDialog("Enter your email:");
                 String username = JOptionPane.showInputDialog("Enter your username:");
-
-                if (regEmail == null || username == null) {
+                String regPassword = JOptionPane.showInputDialog("Enter your password:");
+                if (regEmail == null || username == null || regPassword == null) {
                     JOptionPane.showMessageDialog(null, "Registration cancelled.");
                     break;
                 }
@@ -75,6 +82,7 @@ public class LoginUI {
 
                     Voter newVoter = new Voter(username, publicKeyBase64);
                     newVoter.setEmail(regEmail);
+                    newVoter.setPassword(SecurityUtil.hashPassword(regPassword)); // ✅ Store hashed password
 
                     if (UserManager.registerUser(newVoter)) {
                         JOptionPane.showMessageDialog(null, "Registration successful!");
@@ -87,6 +95,6 @@ public class LoginUI {
                 break;
         }
 
-        return true; // Go back to role selection after action
+        return true;
     }
 }
