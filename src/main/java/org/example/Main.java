@@ -9,7 +9,7 @@ import java.security.KeyPair;
 public class Main {
     public static void main(String[] args) {
         try {
-            // EA key pair va
+            // EA key pair
             KeyPair eaKeyPair = KeyGeneratorUtil.generateKeyPair();
             VotingSystem system = new VotingSystem(eaKeyPair.getPrivate());
 
